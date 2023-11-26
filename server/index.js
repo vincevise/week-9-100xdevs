@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.get('/',(req,res)=>{
     return res.json({
-        message:'its working'
+        message:'badhiya'
     })
 })
 app.use("/admin", adminRouter)
