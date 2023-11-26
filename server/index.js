@@ -9,6 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+    return res.json({
+        message:'its working'
+    })
+})
 app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
