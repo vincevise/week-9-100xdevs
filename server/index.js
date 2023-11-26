@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.get('/',(req,res)=>{
     return res.json({
-        message:'its working 2'
+        message:'running on PORT 300'
     })
 })
 app.use("/admin", adminRouter)
