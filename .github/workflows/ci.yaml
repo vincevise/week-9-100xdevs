@@ -19,7 +19,7 @@ jobs:
       run: |
         echo "$SSH_PRIVATE_KEY" > keyfile
         chmod 600 keyfile
-        ssh -t -i "100xdev.pem" ubuntu@ec2-3-108-249-152.ap-south-1.compute.amazonaws.com  "sudo bash ~/deploy.sh"
+        ssh -t -i keyfile ubuntu@ec2-3-108-249-152.ap-south-1.compute.amazonaws.com  "sudo bash ~/deploy.sh"
 
 
 
